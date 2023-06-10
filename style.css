@@ -1,0 +1,113 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  background-image: url('bg_api.jpg');
+  /*source of picture: https://unsplash.com/photos/IWpd8KixceA */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding-bottom: 100px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+h5 {
+  text-align: center;
+  font-family: Tahoma;
+  font-style: italic;
+  color: red;
+}
+
+
+a {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.air-quality-table {
+  margin: 0 auto;
+  width: 60%;
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+  margin-top: 10px;
+}
+
+.air-quality-table th,
+.air-quality-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.air-quality-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.air-quality-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.air-quality-table tr:hover {
+  background-color: #c6c6c6;
+}
+
+.air-quality-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #249527;
+  color: white;
+}
+
+#leaflet-map-bounds {
+  font-size: 2px;
+  color: #333;
+}
+
+.ui.button.tiny {
+   background-color: #f1f1f1;
+   padding: 10.35px ;
+   margin: 7px; 
+   text-align: center;
+   line-height: 5px;
+   font-size: 15.5px;
+   
+}
+.ui.button.tiny:hover {
+background-color: yellow;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TWT2231 Individual Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="api_map.js" defer></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="api_map.html">Map</a></li>
+      <li><a href="myAPI_table.html">Table (every State)</a></li>
+      <li><a href="api.html">Table (every hour)</a></li>
+      <li><a href="api_info.html">Information</a></li>
+    </ul>
+
+    <h1> Air Quality Index Malaysia Live Stats </h1>
+    <h3> Update Every Hour</h3>
+
+    <div  id='map'  style='height:550px;width: 80%; margin: 0 auto;'>  
+
+    <div style="margin-top: 30px; display: flex;  width:100%; border:solid black;">
+      <div id="leaflet-locations" style="background-color: gray; width: 25%; height: fit-content;"></div>
+            
+      <div style="width: 100%;">
+          <div  id='leaflet-map'  style='height:500px; width: 100%; margin: 0 auto;'></div>
+          <div id="leaflet-map-bounds" style='height:30px; font-size:20px;background-color: lightgray; color: black;text-align: center;'></div>
+      </div>
+      <div id="leaflet-map-error"></div>
+
+    </div>
+    
+  </body>
+</html>

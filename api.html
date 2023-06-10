@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TWT2231 Individual Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="api_map.html">Map</a></li>
+      <li><a href="myAPI_table.html">Table (every State)</a></li>
+      <li><a href="api.html">Table (every hour)</a></li>
+      <li><a href="api_info.html">Information</a></li>
+    </ul>
+
+    <h1>Air Quality Index Malaysia Live Stats</h1>
+    <h3> Update Every Hour</h3>
+          
+    <div class="d-flex" style="margin: 0 auto; display: flex; justify-content: center;">
+      <iframe
+        class="content"
+        style="width: 95%; height: 800px"
+        scrolling="no"
+        src="http://apims.doe.gov.my/api_table.html"
+        frameborder="0"
+        allow="autoplay; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <a href="http://apims.doe.gov.my/api_table.html" style="padding-left: 50px;">Source: Air Pollutant Index of Malaysia (APIMS)</a>
+
+    </body>
+</html>
